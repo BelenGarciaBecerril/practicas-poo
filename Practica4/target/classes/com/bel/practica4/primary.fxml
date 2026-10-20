@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.bel.practica4.PrimaryController" alignment="CENTER" spacing="20.0" style="-fx-padding: 20; -fx-background-color: #ffe4e1;">
+    <children>
+        <HBox alignment="CENTER" spacing="10.0">
+            <children>
+                <Label text="Tabla del:" textFill="#FF69B4" style="-fx-font-size: 14px;" />
+                <TextField fx:id="txtNumero" prefWidth="80.0" promptText="Ej. 5" />
+                <Button onAction="#calcular" text="Calcular" />
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" spacing="10.0">
+            <children>
+                <Button onAction="#limpiar" text="Limpiar" />
+            </children>
+        </HBox>
+        <TextArea fx:id="txtResultado" prefHeight="220.0" prefWidth="200.0" editable="false" style="-fx-control-inner-background: #ffe4e1; -fx-text-fill: #FF69B4; -fx-font-size: 14px;" />
+    </children>
+</VBox>
