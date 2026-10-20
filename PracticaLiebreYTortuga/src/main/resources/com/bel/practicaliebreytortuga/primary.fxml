@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" spacing="15.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.bel.practicaliebreytortuga.PrimaryController">
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <children>
+      <Label text="Fábulas gráficas de Esopo" textFill="#888888">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label text="La Liebre y la Tortuga">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      
+      <Button fx:id="btnIniciar" mnemonicParsing="false" onAction="#iniciarCarrera" prefHeight="35.0" prefWidth="160.0" text="¡Iniciar Carrera!">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+
+      <!-- Seccion Liebre -->
+      <VBox spacing="5.0">
+         <children>
+            <HBox spacing="10.0">
+               <children>
+                  <Label text="La Liebre:">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblLiebreEstado" text="En la línea de salida" textFill="#d14582" />
+               </children>
+            </HBox>
+            <ProgressBar fx:id="pbLiebre" prefHeight="25.0" prefWidth="380.0" progress="0.0" />
+         </children>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </VBox>
+
+      <!-- Seccion Tortuga -->
+      <VBox spacing="5.0">
+         <children>
+            <HBox spacing="10.0">
+               <children>
+                  <Label text="La Tortuga:">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblTortugaEstado" text="En la línea de salida" textFill="#2e7d32" />
+               </children>
+            </HBox>
+            <ProgressBar fx:id="pbTortuga" prefHeight="25.0" prefWidth="380.0" progress="0.0" />
+         </children>
+      </VBox>
+   </children>
+</VBox>
